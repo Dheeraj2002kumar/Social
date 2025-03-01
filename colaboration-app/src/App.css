@@ -53,6 +53,7 @@ body {
 
 .container {
   max-width: 600px;
+  min-width: 500px;
   margin: auto;
 }
 
@@ -65,7 +66,7 @@ body {
 }
 
 .post-box textarea {
-  width: 100%;
+  width: 95%;
   height: 80px;
   padding: 10px;
   border: 1px solid #ddd;
