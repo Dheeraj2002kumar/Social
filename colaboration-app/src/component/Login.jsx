@@ -5,6 +5,7 @@ import "./Login.css";
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState(""); // New state for the user's name
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
@@ -16,8 +17,8 @@ const Login = () => {
     e.preventDefault();
 
     if (username === validUsername && password === validPassword) {
-      // Redirect to the homepage (or dashboard)
-      navigate("/home");
+      // Redirect to the homepage (or dashboard) and pass the user's name as state
+      navigate("/home", { state: { name } });
     } else {
       setError("Invalid username or password");
     }
@@ -46,6 +47,17 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter password"
+              required
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Your Name</label> {/* New Name field */}
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Enter your name"
               required
             />
           </div>

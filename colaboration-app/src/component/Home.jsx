@@ -1,9 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import './Home.css'
+import { useNavigate, useLocation } from "react-router-dom";
+import "./Home.css";
 
 const Home = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const name = location.state?.name; // Get the name passed from Login page
 
   const handleLogout = () => {
     // Clear any stored user data (e.g., localStorage or sessionStorage)
@@ -12,16 +15,17 @@ const Home = () => {
   };
 
   const handleAddPost = () => {
-    navigate("/add-post")
+    navigate("/add-post");
   };
 
   const handleShowPost = () => {
-    navigate("/posts")
+    navigate("/posts");
   };
 
   return (
     <div className="home-container">
       <h1>Welcome to the Dashboard!</h1>
+      {name && <p>Hello, {name}!</p>} {/* Display user's name here */}
       <button onClick={handleLogout} className="logout-btn">
         Logout
       </button>
@@ -29,7 +33,7 @@ const Home = () => {
         Add Post
       </button>
       <button onClick={handleShowPost} className="post-btn">
-        Go to post
+        Go to posts
       </button>
     </div>
   );

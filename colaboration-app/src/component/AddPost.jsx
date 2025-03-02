@@ -5,8 +5,8 @@ import axios from 'axios';
 import './Addpost.css';
 
 const AddPost = () => {
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
   const [categories, setCategories] = useState([]);
   const navigate = useNavigate();
 
@@ -19,19 +19,21 @@ const AddPost = () => {
     }
   };
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newPost = {
+      
       title,
       content,
       categories,
     };
 
     try {
-      await axios.post('http://localhost:8080/blogs', newPost);
-      navigate('/posts');
+      await axios.post("http://localhost:8080/blogs", newPost);
+      navigate("/posts");
     } catch (error) {
-      console.error('Error adding post:', error);
+      console.error("Error adding post:", error);
     }
   };
 
