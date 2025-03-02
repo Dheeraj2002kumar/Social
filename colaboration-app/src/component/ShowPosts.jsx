@@ -93,7 +93,7 @@ const ShowPosts = () => {
 
   return (
     <div className="App">
-      <h1>Blog Posts</h1>
+      <h1 >Blog Posts</h1>
       <div className="blog-list">
         {blogs.map((blog) => (
           <div key={blog.id} className="blog-item">
