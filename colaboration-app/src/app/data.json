@@ -64,6 +64,14 @@
       "categories": [
         "Art"
       ]
+    },
+    {
+      "id": "608c",
+      "title": "add new post",
+      "content": "for testing",
+      "categories": [
+        "Education"
+      ]
     }
   ]
 }
