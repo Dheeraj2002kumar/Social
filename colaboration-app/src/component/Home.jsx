@@ -15,12 +15,9 @@ const Home = () => {
   };
 
   const handleAddPost = () => {
-    navigate("/add-post");
+    navigate("/PostApp");
   };
 
-  const handleShowPost = () => {
-    navigate("/posts");
-  };
 
   return (
     <div className="home-container">
@@ -30,10 +27,7 @@ const Home = () => {
         Logout
       </button>
       <button onClick={handleAddPost} className="post-btn">
-        Add Post
-      </button>
-      <button onClick={handleShowPost} className="post-btn">
-        Go to posts
+        Show Post
       </button>
     </div>
   );
