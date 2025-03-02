@@ -22,12 +22,15 @@ function App() {
     try {
       const response = await axios.get(`${API_URL}.json`);
       if (response.data) {
-        setPosts(Object.entries(response.data).map(([id, post]) => ({ id, ...post })));
+        const postsArray = Object.entries(response.data).map(([id, post]) => ({ id, ...post }));
+        const sortedPosts = postsArray.reverse(); 
+        setPosts(sortedPosts);
       }
     } catch (error) {
       console.error("Error fetching posts:", error);
     }
   };
+  
 
   const handleFileChange = (e) => {
     if (e.target.files[0]) {
@@ -72,7 +75,7 @@ function App() {
       document.querySelector("input[type='file']").value = "";
       const textarea = document.querySelector("textarea");
       if (textarea) {
-        textarea.style.height = "40px"; // Adjust this height based on your input box height
+        textarea.style.height = "20px"; // Adjust this height based on your input box height
       }
 
       fetchPosts();
@@ -125,7 +128,7 @@ function App() {
         <input id="fileInput" type="file" accept="image/*" onChange={handleFileChange} style={{ display: "none" }} />
         {/* update to check buttons style */}
         <div className="post-box-buttons">
-        <button onClick={() => document.getElementById("fileInput").click()}>{mediaName}</button>
+          <button onClick={() => document.getElementById("fileInput").click()}>{mediaName}</button>
           <button onClick={addPost}>Post</button>
         </div>
       </div>
