@@ -11,7 +11,7 @@ function PostApp() {
   const name = location.state?.name || localStorage.getItem("username");
   const [posts, setPosts] = useState([]);
   const [newPost, setNewPost] = useState("");
-  const [username, setUsername] = useState("Ravish Kumar"); // username for now
+  const [username, setUsername] = useState(name); // username for now
   const [commentBox, setCommentBox] = useState(null);
   const [commentText, setCommentText] = useState("");
   const [media, setMedia] = useState(null);
