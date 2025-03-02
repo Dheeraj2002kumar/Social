@@ -10,67 +10,27 @@
       ]
     },
     {
-      "id": "4235",
-      "title": "food",
-      "content": "hi food",
-      "categories": [
-        "Education"
-      ]
-    },
-    {
-      "id": "bfa9",
-      "title": "gfh",
-      "content": "fxgbgfx",
-      "categories": [
-        "Art"
-      ]
-    },
-    {
-      "id": "722b",
-      "title": "mka",
-      "content": "hdfhcc",
-      "categories": [
-        "Art"
-      ]
-    },
-    {
-      "id": "ab46",
-      "title": "bbb",
-      "content": "efszsf",
-      "categories": [
-        "Science"
-      ]
-    },
-    {
-      "id": "ae2d",
-      "title": "ssf",
-      "content": "dFF",
-      "categories": [
-        "Art"
-      ]
-    },
-    {
-      "id": "b9e2",
-      "title": "ff",
-      "content": "ff",
-      "categories": [
-        "Science"
-      ]
-    },
-    {
-      "id": "e519",
-      "title": "hello",
-      "content": "manish",
-      "categories": [
-        "Art"
-      ]
-    },
-    {
       "id": "608c",
       "title": "add new post",
       "content": "for testing",
       "categories": [
         "Education"
+      ]
+    },
+    {
+      "id": "0309",
+      "title": "Open Source",
+      "content": "Best website for open source is GitHub",
+      "categories": [
+        "Technology"
+      ]
+    },
+    {
+      "id": "0e16",
+      "title": "Placement",
+      "content": "Data Structure and Algorithm is very important for Technical interview and coding...",
+      "categories": [
+        "Technology"
       ]
     }
   ]

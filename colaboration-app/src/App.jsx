@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css'
+// import './App.css'
 import ShowPosts from './component/ShowPosts';
 import AddPost from './component/AddPost';
 
