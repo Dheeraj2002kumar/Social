@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "../App.css";
+import "./postdata.css";
 
 const API_URL = "https://xto10x-65566-default-rtdb.firebaseio.com/posts";
 const IMGBB_API_KEY = "c967a294203ff3dae8ac90c9152d695b";
