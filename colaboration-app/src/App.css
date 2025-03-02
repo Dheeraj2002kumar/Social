@@ -44,6 +44,41 @@
 
 /* App.css */
 
+.post-box-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.post-box-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.post-box-buttons button:nth-child(1) {
+  background: #c23b12;
+  color: #ffffff;
+}
+
+.post-box-buttons button:nth-child(1):hover {
+  background: #f3e520;
+}
+
+.post-box-buttons button:nth-child(2) {
+  background: #007bff;
+  color: white;
+}
+
+.post-box-buttons button:nth-child(2):hover {
+  background: #0056b3;
+}
+
+/* upper to check */
 body {
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
@@ -66,12 +101,12 @@ body {
 }
 
 .post-box textarea {
-  width: 95%;
-  height: 80px;
+  width: 96%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   resize: none;
+  overflow: "hidden";
 }
 
 .post-box button {
@@ -97,7 +132,7 @@ body {
 
 .post {
   background-color: white;
-  padding: 15px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -114,10 +149,10 @@ body {
 
 .post-image {
   width: 100%;
-  max-height: 250px;
+  height: 100%;
   object-fit: cover;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .actions {
@@ -128,6 +163,7 @@ body {
 
 .actions button {
   padding: 8px 12px;
+  width: 300px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -156,7 +192,8 @@ body {
 }
 
 .comment-section input {
-  width: calc(100% - 70px);
+  width: 97%;
+  height: auto;
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -164,7 +201,9 @@ body {
 
 .comment-section button {
   width: 60px;
-  padding: 8px;
+  padding: 5px;
+  width: 100%;
+  margin-top: 5px;
   background-color: #28a745;
   color: white;
   border: none;
