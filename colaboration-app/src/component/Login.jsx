@@ -19,12 +19,14 @@ const Login = () => {
     if (username === validUsername && password === validPassword) {
       // Redirect to the homepage (or dashboard) and pass the user's name as state
       navigate("/home", { state: { name } });
+      localStorage.setItem("username", name);
     } else {
       setError("Invalid username or password");
     }
   };
 
   return (
+    <>    
     <div className="login-container">
       <div className="login-form">
         <h2>Login</h2>
@@ -70,6 +72,7 @@ const Login = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

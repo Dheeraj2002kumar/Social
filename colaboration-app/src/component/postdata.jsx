@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./postdata.css";
+import { useLocation } from "react-router-dom";
 
 const API_URL = "https://xto10x-65566-default-rtdb.firebaseio.com/posts";
 const IMGBB_API_KEY = "c967a294203ff3dae8ac90c9152d695b";
 
-function App() {
+function PostApp() {
+  const location = useLocation();
+  const name = location.state?.name || localStorage.getItem("username");
   const [posts, setPosts] = useState([]);
   const [newPost, setNewPost] = useState("");
   const [username, setUsername] = useState("Ravish Kumar"); // username for now
@@ -17,6 +20,13 @@ function App() {
   useEffect(() => {
     fetchPosts();
   }, []);
+
+  useEffect(() => {
+    if (name) {
+      setUsername(name);
+      localStorage.setItem("username", name);
+    }
+  }, [name]);
 
   const fetchPosts = async () => {
     try {
@@ -174,4 +184,4 @@ function App() {
   );
 }
 
-export default App;
+export default PostApp;
