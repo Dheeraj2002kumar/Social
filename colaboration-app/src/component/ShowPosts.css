@@ -69,6 +69,39 @@ h1 {
   color: #0077b5;
 }
 
+.like-btn,
+.comment-btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.like-btn:hover,
+.comment-btn:hover {
+  background-color: #45a049;
+}
+
+.comments {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.comments ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.comments li {
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .loading {
   font-size: 20px;
   color: #555;
