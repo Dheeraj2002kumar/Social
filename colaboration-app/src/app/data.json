@@ -1,0 +1,61 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "title": "How AI is Revolutionizing the World",
+      "content": "AI is shaping the future in various sectors...",
+      "categories": [
+        "Technology",
+        "Science"
+      ]
+    },
+    {
+      "id": "4235",
+      "title": "food",
+      "content": "hi food",
+      "categories": [
+        "Education"
+      ]
+    },
+    {
+      "id": "bfa9",
+      "title": "gfh",
+      "content": "fxgbgfx",
+      "categories": [
+        "Art"
+      ]
+    },
+    {
+      "id": "722b",
+      "title": "mka",
+      "content": "hdfhcc",
+      "categories": [
+        "Art"
+      ]
+    },
+    {
+      "id": "ab46",
+      "title": "bbb",
+      "content": "efszsf",
+      "categories": [
+        "Science"
+      ]
+    },
+    {
+      "id": "ae2d",
+      "title": "ssf",
+      "content": "dFF",
+      "categories": [
+        "Art"
+      ]
+    },
+    {
+      "id": "b9e2",
+      "title": "ff",
+      "content": "ff",
+      "categories": [
+        "Science"
+      ]
+    }
+  ]
+}
